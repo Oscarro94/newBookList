@@ -48,6 +48,7 @@ header h1{
     margin: 50px auto 30px auto ;
     padding: 20px;
     background-color: #f1f1ebc5;
+    
 }
 
 /* Form & input */
@@ -125,6 +126,10 @@ cursor: pointer;
     margin-top: 20px;
     display: flex;
     flex-wrap: wrap;
+    max-height: 300px;
+    overflow-y: auto;
+    border: 1px solid #ccc;
+    padding: 10px;
 }
 
 .books li{
@@ -141,5 +146,11 @@ cursor: pointer;
 @media(max-width: 500px){
     .books li{
         width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .books {
+        max-height: 250px;
     }
 }
