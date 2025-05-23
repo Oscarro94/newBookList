@@ -140,9 +140,13 @@ function clearBooks(){
         bookList.removeChild(bookList.firstChild);
     }
 
+    if(confirm('Are you sure?')){
+
+
     localStorage.removeItem('books');
 
     checkUI();
+    }
 }
 
 function filterBooks(e){
